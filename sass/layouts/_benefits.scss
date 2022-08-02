@@ -3,28 +3,31 @@
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+    
 
 
     @media screen and(min-width: 768px){
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
         
     }
 
                 @media screen and(min-width: 1200px) {
                     flex-direction: row;
                     flex-wrap: wrap;
-                    align-items: center;
         
                 }
 }
 
+//    flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
+   
+
 .benefits__item {
     max-width: 450px;
-
+ 
         @media screen and(min-width: 768px) {
                 width: 354px;
+
         
             }
         

@@ -7,6 +7,16 @@
 .portfolio__item {
     margin-right: 30px;
     margin-bottom: 30px;
+
+            @media screen and (min-width: 768px) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    flex-basis: calc((100% - 30px * 2) / 2);
+                }
+
+    @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 3) / 3);
+    }
 }
 
 .portfolio__item:nth-child(3n + 3) {

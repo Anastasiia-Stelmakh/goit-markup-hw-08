@@ -1,0 +1,31 @@
+.footer {
+    background-color: var(--secondary-bg-cl);
+    color: var(--main-bg-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address {
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--white-txt-cl);
+}
+
+.footer-list:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-link {
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-cl);
+}

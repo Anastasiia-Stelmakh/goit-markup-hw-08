@@ -1,0 +1,42 @@
+.menu {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.menu__button {
+    color: var(--dark-grey-txt-cl);
+    background-color: var(--additional-bg-cl);
+    padding: 6px 22px;
+    line-height: 1.6;
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.menu__button:hover,
+.menu__button:focus {
+    background-color: var(--accent-cl);
+    color: var(--white-txt-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu__button--active {
+    background-color: var(--accent-cl);
+    color: var(--white-txt-cl);
+}

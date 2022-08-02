@@ -1,0 +1,38 @@
+.doing__list {
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.doing__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ====================== */
+/* ====================== */
+.doing__item {
+  position: relative;
+}
+
+.doing-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doing-overlay__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-txt-cl);
+  padding: 27px 82px;
+}

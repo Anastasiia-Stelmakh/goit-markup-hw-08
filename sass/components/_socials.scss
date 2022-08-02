@@ -1,0 +1,85 @@
+.social-contact {
+    display: flex;
+    justify-content: center;
+
+    &__item:not(:last-child) {
+            margin-right: 10px;
+        }
+    
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background-color: var(--main-bg-cl);
+            border-radius: 50%;
+            fill: #afb1b8;
+    
+            transition-property: background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &__link:hover,
+        &__link:focus {
+            background-color: var(--accent-cl);
+        }
+    
+        &__img {
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &__link:hover &__img,
+        &__link:focus &__img {
+            fill: var(--white-txt-cl);
+        }
+}
+
+
+
+.footer-contacts {
+    margin-left: 70px;
+
+    &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+    
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            background-color: rgba(250, 250, 250, 0.1);
+            border-radius: 50%;
+            fill: var(--white-txt-cl);
+    
+            transition-property: background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &__item:not(:last-child) {
+            margin-right: 10px;
+        }
+    
+        &__link:hover,
+        &__link:focus {
+            background-color: var(--accent-cl);
+        }
+}
+

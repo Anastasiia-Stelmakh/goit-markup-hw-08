@@ -1,0 +1,12 @@
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--main-bg-cl);
+    color: var(--light-grey-txt-cl);
+
+    &.no-scroll {
+            overflow: hidden;
+        }
+}
+

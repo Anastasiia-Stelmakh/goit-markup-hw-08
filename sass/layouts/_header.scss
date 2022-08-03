@@ -17,7 +17,7 @@
 .nav__logo {
   margin-left: 0;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         margin-right: 87px;
         margin-left: 0;
       }
@@ -55,6 +55,11 @@
 
 .footer__logo {
   margin-bottom: 20px;
+
+          @media screen and (min-width: 768px) {}
+          
+          @media screen and (min-width: 1200px) {}
+          
 }
 
 
@@ -198,6 +203,7 @@ display: none;
   display: flex;
     padding-left: 0;
     margin-left: auto;
+    flex-direction: row;
   }
 }
 
@@ -212,8 +218,6 @@ display: none;
       color: var(--light-grey-txt-cl);
       line-height: 1.17;
       letter-spacing: 0.02em;
-      padding-top: 32px;
-      padding-bottom: 32px;
       display: flex;
       align-items: center;
   

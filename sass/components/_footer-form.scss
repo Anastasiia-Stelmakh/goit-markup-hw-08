@@ -1,5 +1,13 @@
 .footer-form {
     margin-left: 93px;
+
+        @media screen and (min-width: 768px) {
+
+            }
+        
+            @media screen and (min-width: 1200px) {
+
+            }
 }
 
 .footer-mail-title {
@@ -15,6 +23,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .footer-input-field {

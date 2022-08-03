@@ -176,17 +176,17 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -206,6 +206,26 @@ ul {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .social-contact {
@@ -576,7 +596,6 @@ ul {
 .footer-form {
   margin-left: 93px;
 }
-
 .footer-mail-title {
   margin-bottom: 20px;
   line-height: 1.14;
@@ -596,6 +615,11 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 .footer-input-field {
@@ -674,7 +698,7 @@ ul {
 .mobile-menu-btn {
   background-color: transparent;
   border: none;
-  width: 40p;
+  width: 40px;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -851,7 +875,7 @@ ul {
 .nav__logo {
   margin-left: 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .nav__logo {
     margin-right: 87px;
     margin-left: 0;
@@ -890,7 +914,6 @@ ul {
 .footer__logo {
   margin-bottom: 20px;
 }
-
 /* Navigation style */
 .nav {
   display: -webkit-box;
@@ -1029,6 +1052,10 @@ ul {
     display: flex;
     padding-left: 0;
     margin-left: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1041,8 +1068,6 @@ ul {
     color: var(--light-grey-txt-cl);
     line-height: 1.17;
     letter-spacing: 0.02em;
-    padding-top: 32px;
-    padding-bottom: 32px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1210,42 +1235,45 @@ ul {
   }
 }
 
+.doing {
+  display: none;
+}
+@media screen and (min-width: 768) {
+  .doing {
+    display: none;
+  }
+}
+@media screen and (min-width: 768) {
+  .doing {
+    display: block;
+  }
+}
+
 .doing__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 0;
-  padding-left: 0;
-  gap: 30px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .doing__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    display: none;
   }
 }
 @media screen and (min-width: 1200px) {
   .doing__list {
-    -webkit-box-orient: horizontal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+    gap: 30px;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: center;
@@ -1331,6 +1359,7 @@ ul {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: 100%;
     -ms-flex-preferred-size: calc((100% - 120px) / 4);
         flex-basis: calc((100% - 120px) / 4);
   }

@@ -854,11 +854,13 @@ ul {
 @media screen and (min-width: 1200px) {
   .nav__logo {
     margin-right: 87px;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav__logo {
     margin-right: 93px;
+    margin-left: 0;
   }
 }
 

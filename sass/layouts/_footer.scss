@@ -25,6 +25,10 @@
 
 .footer-item{
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer-item:not(:last-child) {

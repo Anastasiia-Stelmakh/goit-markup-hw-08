@@ -33,6 +33,11 @@
     font-style: normal;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    @media screen and (min-width: 768px){
+        
+    }
+
 }
 
 .modal-form-button {

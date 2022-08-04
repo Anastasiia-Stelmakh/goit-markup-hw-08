@@ -69,6 +69,12 @@
 
     transition: transform 500ms;
 
+    &.is-hidden {
+        opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+    }
+
     &.is-open{
     transform: translateX(0);
     }

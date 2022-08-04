@@ -5,13 +5,29 @@
     padding-bottom: 60px;
 }
 
+.footer__wraper {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .address {
     font-style: normal;
     line-height: 1.71;
     color: var(--white-txt-cl);
 }
 
-.footer-list:not(:last-child) {
+.footer-list {
+    margin-bottom: 60px;
+}
+
+.footer-item{
+    text-align: center;
+}
+
+.footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
 

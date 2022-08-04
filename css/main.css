@@ -1174,17 +1174,9 @@ ul {
   }
 }
 
-.doing {
-  display: none;
-}
-@media screen and (min-width: 768) {
+@media screen and (max-width: 1999px) {
   .doing {
     display: none;
-  }
-}
-@media screen and (min-width: 768) {
-  .doing {
-    display: block;
   }
 }
 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ss</title>
+</head>
+<body>
+	<style>
+		.grid {
+			max-width: 1368px;
+			width: 100%;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-gap: 30px;
+			grid-template-areas: 
+			"f f f s s s"
+			". . . . . ."
+			;
+		}
+		.grid div {
+			background: red;
+			height: 300px;
+		}
+		.f {grid-area: f;}
+		.s {grid-area: s;}
+		.b {
+			/*grid-row-start: 2;*/
+  			grid-column: span 2;
+  		}
+  		h2 {text-align: center;}
+  		/*=====твоя=хуета========*/
+  		.container {
+  			max-width: 1200px;
+  			width: 100%;
+  			margin: 0 auto;
+  		}
+  		.benefits__list {
+  			width: 100%;
+  			display: grid;
+  			grid-template-columns: repeat(4, 1fr); /*repeat(4 - количество колонок, 1fr - поделить место поровну между ними)*/
+  			grid-gap: 30px;
+  		}
+  		@media(max-width:  1200px){
+  			.benefits__list {
+  				grid-template-columns: repeat(2, 1fr);
+  			}
+  		}
+  		@media(max-width:  768px){
+  			.benefits__list {
+  				grid-template-columns: 1fr;
+  			}
+  		}
+	</style>
+	<h2>не твоя хуета, но если сильно надо - можешь пользоваться)))</h2>
+<div class="grid">
+	<div class="f"></div>
+	<div class="s"></div>
+	<div class="b"></div>
+	<div class="b"></div>
+	<div class="b"></div>
+	<div class="b"></div>
+</div>
+<div class="container">
+          <h2 class="visually-hidden" hidden="">Твоя хуета которая с тебя орет))))))</h2>
+<!-- И еще я бы не делал это все через ul-li, потогму что смысл потом тебе заниматся обнулением предустановленных стилей для ul li. Можно и дивчиками обойтись -->
+          <ul class="lists benefits__list">
+            <li class="benefits__item">
+              <div class="benefits__wraper">
+                <svg class="benefits__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-benefits1"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">Внимание к деталям</h3>
+              <p class="benefits__text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+
+            <li class="benefits__item">
+              <div class="benefits__wraper">
+                <svg class="benefits__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-benefits2"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">Пунктуальность</h3>
+              <p class="benefits__text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+
+            <li class="benefits__item">
+              <div class="benefits__wraper">
+                <svg class="benefits__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-benefits3"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">Планирование</h3>
+              <p class="benefits__text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+
+            <li class="benefits__item">
+              <div class="benefits__wraper">
+                <svg class="benefits__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-benefits4"></use>
+                </svg>
+              </div>
+              <h3 class="benefits__title">Современные технологии</h3>
+              <p class="benefits__text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+</body>
+</html>

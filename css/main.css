@@ -1102,7 +1102,7 @@ ul {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 100%;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--secondary-bg-cl);
@@ -1122,7 +1122,6 @@ ul {
     text-align: center;
     padding-top: 118px;
     padding-bottom: 188px;
-    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
     background-color: var(--secondary-bg-cl);
@@ -1138,12 +1137,11 @@ ul {
     background-image: url(../images/bagraund-md@2x.jpg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
     background-color: var(--secondary-bg-cl);
@@ -1154,7 +1152,7 @@ ul {
     background-position: center;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero .box {
     background-image: url(../images/bagraund-lg@2x.jpg);
   }

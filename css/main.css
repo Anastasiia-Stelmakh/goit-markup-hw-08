@@ -151,6 +151,11 @@ ul {
   padding-top: 0px;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1999px) {
+  .doing {
+    display: none;
+  }
+}
 
 .header {
   border: 1px solid var(--header-border-cl);
@@ -1175,15 +1180,6 @@ ul {
 }
 
 @media screen and (max-width: 1999px) {
-  .doing {
-    display: none;
-  }
-}
-
-.doing__list {
-  display: none;
-}
-@media screen and (min-width: 768px) {
   .doing__list {
     display: none;
   }

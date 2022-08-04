@@ -1,17 +1,10 @@
-.doing {
-
-  @media screen and (max-width: 1999px) {
-display: none;
-  }
-}
 
 .doing__list {
-display: none;
 
-@media screen and(min-width: 768px) {
-display: none;
+  @media screen and (max-width: 1999px) {
+      display: none;
     }
-            
+          
  @media screen and(min-width: 1200px) {
   display: flex;
   margin-left: 0;

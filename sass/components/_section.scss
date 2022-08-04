@@ -17,6 +17,10 @@
 .doing {
     padding-top: 0px;
     padding-bottom: 94px;
+
+    @media screen and (max-width: 1999px) {
+            display: none;
+        }
 }
 
 .header {

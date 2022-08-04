@@ -1094,7 +1094,7 @@ ul {
 }
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   color: var(--main-bg-cl);
   text-transform: uppercase;
@@ -1105,6 +1105,33 @@ ul {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+    font-size: 26px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;

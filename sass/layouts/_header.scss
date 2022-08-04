@@ -1,4 +1,4 @@
-.header{
+.header {
     border: 1px solid var(--header-border-cl);
     margin: 0;
     z-index: 10;
@@ -210,7 +210,7 @@ display: none;
    }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
   .contact__list:not(:last-child) {
       margin-right: 50px;

@@ -4,7 +4,7 @@
 
 
 MenuBtnRef.addEventListener("click", () => {
-  const expanded = menuBtnRef.getAttribute("aria-expanded")
+  const expanded = MenuBtnRef.getAttribute("aria-expanded")
     === "true" || false;
   
   MenuBtnRef.classList.toggle('is-open');

@@ -52,7 +52,7 @@
 }
 
 
-.mobile-menu{
+.mobile-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -69,7 +69,7 @@
 
     transition: transform 500ms;
 
-    &.is-open{
+    &.is-open {
     transform: translateX(0);
     }
 
@@ -93,7 +93,7 @@
     margin-bottom: 32px;
 }
 
-.mobile-menu-nav-link{
+.mobile-menu-nav-link {
     font-weight: 500;
         font-size: 40px;
         line-height: 1.18;
@@ -101,7 +101,7 @@
         color: var(--dark-grey-txt-cl);
 }
 
-.link--current{
+.link--current {
     color: var(--accent-cl);
 }
 
@@ -109,7 +109,7 @@
     margin-bottom: 64px;
 }
 
-.mobile-menu-tel{
+.mobile-menu-tel {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px; 

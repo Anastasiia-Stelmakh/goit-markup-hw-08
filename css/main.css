@@ -1570,12 +1570,28 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   padding-left: 0px;
   margin-top: 0;
   margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .menu__button {
@@ -1589,6 +1605,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
+  margin-bottom: 15px;
   -webkit-transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, -webkit-box-shadow;
   transition-property: color, background-color, box-shadow;
@@ -1597,6 +1614,16 @@ ul {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .menu__button {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__button {
+    margin-bottom: 0;
+  }
 }
 
 .menu__item:not(:last-child) {

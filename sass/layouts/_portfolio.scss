@@ -54,7 +54,9 @@
 }
 
 .portfolio__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 
     transition-property: box-shadow;
     transition-duration: 250ms;

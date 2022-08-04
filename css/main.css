@@ -1003,9 +1003,6 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .contact__list:not(:last-child) {
-    margin-right: 50px;
-  }
   .contact__item {
     font-weight: 500;
     color: var(--light-grey-txt-cl);

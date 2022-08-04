@@ -151,7 +151,7 @@ ul {
   padding-top: 0px;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1999px) {
+@media screen and (max-width: 1199px) {
   .doing {
     display: none;
   }
@@ -1179,7 +1179,12 @@ ul {
   }
 }
 
-@media screen and (max-width: 1999px) {
+@media screen and (min-width: 768px) {
+  .doing__list {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
   .doing__list {
     display: none;
   }

@@ -1,7 +1,11 @@
 
 .doing__list {
 
-  @media screen and (max-width: 1999px) {
+    @media screen and (min-width: 768px) {
+        display: none;
+      }
+
+  @media screen and (max-width: 1199px) {
       display: none;
     }
           
@@ -16,6 +20,7 @@
   flex-wrap: wrap;
   align-items: center;
   flex-basis: calc((100% - 30px * 3) / 3);
+
 }
 }
 

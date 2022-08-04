@@ -52,7 +52,7 @@
 }
 
 
-.mibile-menu{
+.mobile-menu{
     position: fixed;
     top: 0;
     left: 0;
@@ -68,12 +68,6 @@
     transform: translateX(100%);
 
     transition: transform 500ms;
-
-    &.is-hidden {
-        opacity: 0;
-            pointer-events: none;
-            visibility: hidden;
-    }
 
     &.is-open{
     transform: translateX(0);

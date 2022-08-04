@@ -1,9 +1,9 @@
 /* Hero styles */
 .hero {
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
 
@@ -11,10 +11,76 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/bagraund.jpg);
+        url(../images/bagraund-sm.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    //Для ретіна екранів мобільна версія
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .box {
+            background-image: url(../images/bagraund-sm@2x.jpg);
+            }
+        }
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+            padding-top: 118px;
+            padding-bottom: 188px;
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        
+            background-color: var(--secondary-bg-cl);
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/bagraund-md.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            //Для ретіна екранів планшетна версія
+            
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    .box {
+                        background-image: url(../images/bagraund-md@2x.jpg);
+                    }
+                }
+    }
+
+    @media screen and (min-width: 768px) {
+            text-align: center;
+                padding-top: 200px;
+                padding-bottom: 200px;
+                max-width: 1600px;
+                margin-right: auto;
+                margin-left: auto;
+            
+                background-color: var(--secondary-bg-cl);
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/bagraund-lg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                //Для ретіна екранів десктопна версія
+                
+                    @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        .box {
+                            background-image: url(../images/bagraund-lg@2x.jpg);
+                        }
+                    }
+    }
 
     &__title {
             font-weight: 900;

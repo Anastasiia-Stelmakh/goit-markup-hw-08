@@ -36,7 +36,9 @@ background-color: transparent;
 
 .mobile-menu-burger {
     opacity: 1;
-    transition: 500ms;
+    transition: transform;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-btn.is-open .mobile-menu-burger{
@@ -45,7 +47,10 @@ background-color: transparent;
 
 .mobile-menu-close {
    opacity: 0;
-   transition: 500ms;
+
+    transition: transform;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-btn.is-open .mobile-menu-close {
@@ -72,7 +77,9 @@ background-color: transparent;
 
     transform: translateX(100%);
 
-    transition: transform 500ms;
+    transition: transform;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &.is-open {
     transform: translateX(0);
@@ -142,6 +149,10 @@ background-color: transparent;
     line-height: 1.22px;
     letter-spacing: 0.02em;
     color: var(--accent-cl);
+}
+
+.mobile-menu-socials-item{
+    margin-bottom: 10px;
 }
 
 .mobile-menu-socials-item:not(:last-child) .mobile-menu-socials-link {

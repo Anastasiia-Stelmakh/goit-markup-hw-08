@@ -656,8 +656,14 @@ ul {
 
 .mobile-menu-burger {
   opacity: 1;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-btn.is-open .mobile-menu-burger {
@@ -666,8 +672,14 @@ ul {
 
 .mobile-menu-close {
   opacity: 0;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-btn.is-open .mobile-menu-close {
@@ -696,10 +708,14 @@ ul {
           flex-direction: column;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transition: -webkit-transform;
+  transition: -webkit-transform;
+  transition: transform;
+  transition: transform, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu.is-open {
   -webkit-transform: translateX(0);
@@ -774,6 +790,10 @@ ul {
   line-height: 1.22px;
   letter-spacing: 0.02em;
   color: var(--accent-cl);
+}
+
+.mobile-menu-socials-item {
+  margin-bottom: 10px;
 }
 
 .mobile-menu-socials-item:not(:last-child) .mobile-menu-socials-link {
@@ -1080,17 +1100,64 @@ ul {
 /* Hero styles */
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   background-color: var(--secondary-bg-cl);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bagraund.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bagraund.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bagraund-sm.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bagraund-sm.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .box {
+    background-image: url(../images/bagraund-sm@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 188px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--secondary-bg-cl);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bagraund-md.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bagraund-md.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .box {
+    background-image: url(../images/bagraund-md@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--secondary-bg-cl);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bagraund-lg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bagraund-lg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .box {
+    background-image: url(../images/bagraund-lg@2x.jpg);
+  }
 }
 .hero__title {
   font-weight: 900;

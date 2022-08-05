@@ -26,6 +26,11 @@
     border: none;
     margin-bottom: 10px;
     position: relative;
+
+    @media screen and (min-width: 768px) {
+        height: 100%;
+        
+    }
 }
 
 .modal-contact-item {

@@ -251,12 +251,27 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="doing__list">
             <li class="lists doing__item">
-              <img
-                src="./images/box-1-lg.jpg"
-                alt="Десктопные приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/box-1-lg.webp    1x,
+                    ./images/box-1-lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/box-1-lg.jpg 1x, ./images/box-1-lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/box-1-lg.jpg"
+                  alt="Десктопные приложения"
+                  width="370"
+                  height="294"
+                />
+              </picture>
 
               <div class="doing-overlay">
                 <p class="doing-overlay__text">Десктопные приложения</p>
@@ -264,12 +279,27 @@
             </li>
 
             <li class="lists doing__item">
-              <img
-                src="./images/box-2-lg.jpg"
-                alt="Мобильные приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/box-2-lg.webp    1x,
+                    ./images/box-2-lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/box-2-lg.jpg 1x, ./images/box-2-lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/box-2-lg.jpg"
+                  alt="Мобильные приложения"
+                  width="370"
+                  height="294"
+                />
+              </picture>
 
               <div class="doing-overlay">
                 <p class="doing-overlay__text">Мобильные приложения</p>
@@ -277,12 +307,27 @@
             </li>
 
             <li class="lists doing__item">
-              <img
-                src="./images/box-3-lg.jpg"
-                alt="Дизайнерские решения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/box-3-lg.webp    1x,
+                    ./images/box-3-lg@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/box-3-lg.jpg 1x, ./images/box-3-lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/box-3-lg.jpg"
+                  alt="Дизайнерские решения"
+                  width="370"
+                  height="294"
+                />
+              </picture>
 
               <div class="doing-overlay">
                 <p class="doing-overlay__text">Дизайнерские решения</p>
@@ -306,10 +351,27 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
+                      ./images/team-1-lg.webp    1x,
+                      ./images/team-1-lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
                       ./images/team-1-lg.jpg    1x,
                       ./images/team-1-lg@2x.jpg 2x
                     "
                     type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team-1-md.webp    1x,
+                      ./images/team-1-md@2x.webp 2x
+                    "
+                    type="image/webp"
                   />
                   <source
                     media="(min-width: 768px)"
@@ -318,6 +380,15 @@
                       ./images/team-1-md@2x.jpg 2x
                     "
                     type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/team-1-sm.webp    1x,
+                      ./images/team-1-sm@2x.webp 2x
+                    "
+                    type="image/webp"
                   />
                   <source
                     media="(max-width: 767px)"
@@ -408,10 +479,27 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
+                      ./images/team-2-lg.webp    1x,
+                      ./images/team-2-lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
                       ./images/team-2-lg.jpg    1x,
                       ./images/team-2-lg@2x.jpg 2x
                     "
                     type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team-2-md.webp    1x,
+                      ./images/team-2-md@2x.webp 2x
+                    "
+                    type="image/webp"
                   />
                   <source
                     media="(min-width: 768px)"
@@ -420,6 +508,15 @@
                       ./images/team-2-md@2x.jpg 2x
                     "
                     type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/team-2-sm.webp    1x,
+                      ./images/team-2-sm@2x.webp 2x
+                    "
+                    type="image/webp"
                   />
                   <source
                     media="(max-width: 767px)"
@@ -510,10 +607,27 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
+                      ./images/team-3-lg.webp    1x,
+                      ./images/team-3-lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
                       ./images/team-3-lg.jpg    1x,
                       ./images/team-3-lg@2x.jpg 2x
                     "
                     type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team-3-md.webp    1x,
+                      ./images/team-3-md@2x.webp 2x
+                    "
+                    type="image/webp"
                   />
                   <source
                     media="(min-width: 768px)"
@@ -522,6 +636,15 @@
                       ./images/team-3-md@2x.jpg 2x
                     "
                     type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/team-3-sm.webp    1x,
+                      ./images/team-3-sm@2x.webp 2x
+                    "
+                    type="image/webp"
                   />
                   <source
                     media="(max-width: 767px)"
@@ -612,10 +735,27 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
+                      ./images/team-4-lg.webp    1x,
+                      ./images/team-4-lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
                       ./images/team-4-lg.jpg    1x,
                       ./images/team-4-lg@2x.jpg 2x
                     "
                     type="image/jpg"
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team-4-md.webp    1x,
+                      ./images/team-4-md@2x.webp 2x
+                    "
+                    type="image/webp"
                   />
                   <source
                     media="(min-width: 768px)"
@@ -624,6 +764,15 @@
                       ./images/team-4-md@2x.jpg 2x
                     "
                     type="image/jpg"
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/team-4-sm.webp    1x,
+                      ./images/team-4-sm@2x.webp 2x
+                    "
+                    type="image/webp"
                   />
                   <source
                     media="(max-width: 767px)"

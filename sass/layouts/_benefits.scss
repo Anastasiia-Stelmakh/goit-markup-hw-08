@@ -27,15 +27,12 @@
     max-width: 450px;
  
         @media screen and(min-width: 768px) {
-                width: 354px;
-
-        
-            }
+        width: 354px;        
+        }
         
         @media screen and(min-width: 1200px) {
-        width: 270px;
-        
-            }
+        width: 270px;        
+        }
 }
 
 .benefits__title {
@@ -59,13 +56,11 @@
     align-items: center;
     justify-content: center;
 
-            @media screen and(min-width: 768px) {
-                    width: 354px;
+        @media screen and(min-width: 768px) {
+        width: 354px;            
+        }
             
-                }
-            
-                @media screen and(min-width: 1200px) {
-                    width: 270px;
-            
-                }
+        @media screen and(min-width: 1200px) {
+        width: 270px;            
+        }
 }

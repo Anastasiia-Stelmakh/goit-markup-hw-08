@@ -55,29 +55,29 @@
 
     @media screen and (min-width: 1200px) {
             text-align: center;
-                padding-top: 200px;
-                padding-bottom: 200px;
-                margin-right: auto;
-                margin-left: auto;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            margin-right: auto;
+            margin-left: auto;
             
-                background-color: var(--secondary-bg-cl);
-                background-image: linear-gradient(to right,
-                        rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),
-                    url(../images/bagraund-lg.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
+            background-color: var(--secondary-bg-cl);
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/bagraund-lg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
 
                 //Для ретіна екранів десктопна версія
                 
-                    @media (min-device-pixel-ratio: 2),
-                    (min-resolution: 192dpi),
-                    (min-resolution: 2dppx) {
-                        .box {
-                            background-image: url(../images/bagraund-lg@2x.jpg);
-                        }
-                    }
+    @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+        .box {
+            background-image: url(../images/bagraund-lg@2x.jpg);
+            }
+        }
     }
 
     &__title {
@@ -96,32 +96,31 @@
 
 
                 @media screen and (min-width: 768px) {
-                        max-width: 360px;
-                        font-size: 26px;
+                    max-width: 360px;
+                    font-size: 26px;
                 
-                        font-weight: 900;
-                        font-size: 26px;
-                        line-height: 1.62;
-                        letter-spacing: 0.06em;
-                        text-align: center;
-                                    margin-left: auto;
-                                        margin-right: auto;
-                                        height: 100%;
-                        
+                    font-weight: 900;
+                    font-size: 26px;
+                    line-height: 1.62;
+                    letter-spacing: 0.06em;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 100%;                        
                     }
                 
                     @media screen and (min-width: 1200px) {
-                        max-width: 696px;
-                        text-align: center;
+                    max-width: 696px;
+                    text-align: center;
 
-                        font-weight: 900;
-                            font-size: 44px;
-                            line-height: 1.36;
+                    font-weight: 900;
+                    font-size: 44px;
+                    line-height: 1.36;
                         
-                            text-align: center;
-                            letter-spacing: 0.06em;
-                                        margin-left: auto;
-                                            margin-right: auto;
+                    text-align: center;
+                    letter-spacing: 0.06em;
+                    margin-left: auto;
+                    margin-right: auto;
                     }
         }
 

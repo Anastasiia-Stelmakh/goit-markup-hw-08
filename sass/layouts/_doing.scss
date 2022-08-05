@@ -1,13 +1,13 @@
 
 .doing__list {
 
-    @media screen and (min-width: 768px) {
-        display: none;
-      }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
   @media screen and (max-width: 1199px) {
-      display: none;
-    }
+    display: none;
+  }
           
  @media screen and(min-width: 1200px) {
   display: flex;
@@ -20,13 +20,9 @@
   flex-wrap: wrap;
   align-items: center;
   flex-basis: calc((100% - 30px * 3) / 3);
-
+  }
 }
-}
 
-// .doing__item:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 /* ====================== */
 /* ====================== */

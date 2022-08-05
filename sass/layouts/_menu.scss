@@ -12,9 +12,9 @@
             justify-content: center;
         }
         
-            @media screen and (min-width: 1200px) {
-                justify-content: center;
-            }
+        @media screen and (min-width: 1200px) {
+            justify-content: center;
+        }
 }
 
 .menu__button {
@@ -36,13 +36,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width: 768px) {
-               margin-bottom: 0;;
-            }
+            margin-bottom: 0;;
+        }
         
-            @media screen and (min-width: 1200px) {
-                margin-bottom: 0;;
-            }
-
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;;
+        }
 }
 
 .menu__item:not(:last-child) {
